@@ -1,0 +1,13 @@
+footer.site_foot {
+  padding-top: 3rem;
+  background-color: #333;
+  color: white;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container > * {
+    width: 33%;
+  }
+}

@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
-  root to: 'visitors#index'
+  get 'content/home'
+
+  get 'content/about'
+
+  get 'content/privacy'
+
+  get 'content/terms'
+
+  get 'content/contact'
+
+  root to: 'content#home'
   devise_for :users
   resources :users
 end

@@ -2,6 +2,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$link-color: #65a267;
+
+a {
+  color: $link-color;
+}
+a:hover {
+  color: lighten($link-color, 50%);
+}
+a:visited{
+  color: darken($link-color, 50%);
+}
 // make all images responsive by default
 img {
   @extend .img-responsive;
