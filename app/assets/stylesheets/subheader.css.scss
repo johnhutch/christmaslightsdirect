@@ -1,0 +1,8 @@
+.site_subheader {
+  height: 3em;
+  background: #9a2820; /* Old browsers */
+  background: -moz-linear-gradient(top, #9a2820 0%, #b82024 20%, #b82024 20%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #9a2820 0%,#b82024 20%,#b82024 20%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #9a2820 0%,#b82024 20%,#b82024 20%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a2820', endColorstr='#b82024',GradientType=0 ); /* IE6-9 */
+}

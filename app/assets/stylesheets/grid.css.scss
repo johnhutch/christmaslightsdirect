@@ -1,0 +1,33 @@
+.app_grid {
+  display: grid;
+  resize: horizontal;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows:  auto auto 1fr auto;
+  grid-template-areas:
+    'topbar       topbar       topbar'
+    'header       header       header'
+    'subheader    subheader    subheader'
+    'site_main    site_main    sidebar'
+    'foot         foot         foot';
+}
+
+.navbar{.
+  grid-area: topbar;.
+  grid-column: 1 / span 3;
+  text-align: center;
+}
+nav.navbar { grid-area: topbar; }
+header.site_head { grid-area: header; }
+.site_subheader { grid-area: subheader; }
+main.site_main { grid-area: site_main; }
+footer.site_foot { grid-area: foot; }
+
+header.site_head {
+  z-index: 10;
+}
+nav.navbar,
+.site_subheader,
+main.site_main,
+footer.site_foot {
+  z-index: 5;
+}

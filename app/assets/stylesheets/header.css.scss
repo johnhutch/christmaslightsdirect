@@ -1,0 +1,51 @@
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  z-index: 50;
+}
+h1.page_title {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+header {
+  text-align: left;
+  padding-bottom: -20px;
+
+  background: #457248; /* Old browsers */
+  background: -moz-linear-gradient(top, #457248 0%, #224223 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #457248 0%,#224223 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #457248 0%,#224223 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#457248', endColorstr='#224223',GradientType=0 ); /* IE6-9 */
+
+  a.logo {
+    display: block;
+    margin-top: -25px;
+    padding-top: 28px;
+  }
+  a.logo img {
+    width: 322px;
+    max-width: 322px;
+    height: 166px;
+  }
+  
+  h2 {
+    color: white;
+    margin: 1rem 0;
+    padding: 0;
+    margin-left: 1em;
+    padding-left: 1em;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .container {
+    display: flex;
+    height: 118px;
+    align-items: center;
+  }
+}

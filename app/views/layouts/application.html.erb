@@ -8,13 +8,24 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
-  <body>
-    <header>
-      <%= render 'layouts/navigation' %>
+  <body class="app_grid">
+    <header class="site_head">
+      <div class="container">
+        <a href="/" title="Christmas Lights Direct" class="logo">
+          <h1 class="page_title">Christmas Lights Direct</h1>
+          <img src="/images/logo.png" alt="Christmas Lights Direct logo" />
+        </a>
+        <h2 class="description">Direct importers of wholesale christmas lights and decorations</h2>
+      </div>
     </header>
+    <div class="site_subheader"> </div>
+    <%= render 'layouts/navigation' %>
     <main role="main">
        <%= render 'layouts/messages' %>
        <%= yield %>
     </main>
+    <footer>
+        <%= render 'layouts/nav_links_for_auth' %>
+    </footer>
   </body>
 </html>
