@@ -25,13 +25,14 @@ header {
 
   a.logo {
     display: block;
-    margin-top: -25px;
+    margin-top: -48px;
+    margin-bottom: -40px;
     padding-top: 28px;
+    padding-bottom: 10px;
   }
   a.logo img {
-    width: 322px;
+    width: 100%;
     max-width: 322px;
-    height: 166px;
   }
   
   h2 {
@@ -43,9 +44,8 @@ header {
     border-left: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  .container {
-    display: flex;
-    height: 118px;
-    align-items: center;
+  .container .hero_grid {
+    display: grid;
+    grid-template-columns: 322px 1fr;
   }
 }
