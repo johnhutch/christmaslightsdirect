@@ -1,0 +1,8 @@
+
+pages are categories?
+
+product has_and_belongs_to_many categories
+product has_many skus, :order => "position"
+sku belongs to product
+sku belongs_to availability
+availability has_many skus

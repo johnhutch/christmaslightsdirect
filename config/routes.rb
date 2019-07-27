@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :posts
+  resources :skus
+  resources :products
   get 'content/home'
 
   get 'content/about'

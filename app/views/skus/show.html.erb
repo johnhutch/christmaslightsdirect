@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @sku.product_id %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @sku.position %>
+</p>
+
+<p>
+  <strong>Item num:</strong>
+  <%= @sku.item_num %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @sku.description %>
+</p>
+
+<p>
+  <strong>Availability:</strong>
+  <%= @sku.availability_id %>
+</p>
+
+<p>
+  <strong>Casepack:</strong>
+  <%= @sku.casepack %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @sku.price %>
+</p>
+
+<%= link_to 'Edit', edit_sku_path(@sku) %> |
+<%= link_to 'Back', skus_path %>
