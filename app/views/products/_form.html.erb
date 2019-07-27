@@ -12,27 +12,17 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :page_id %>
-    <%= form.number_field :page_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :position %>
-    <%= form.number_field :position %>
-  </div>
-
-  <div class="field">
-    <%= form.label :title %>
+    <%= form.label :title, "Product Name" %>
     <%= form.text_field :title %>
   </div>
 
   <div class="field">
-    <%= form.label :description %>
+    <%= form.label :description, "Product Description" %>
     <%= form.text_area :description %>
   </div>
 
   <div class="field">
-    <%= form.label :image %>
+    <%= form.label :image, "Link to the product image" %>
     <%= form.text_field :image %>
   </div>
 
