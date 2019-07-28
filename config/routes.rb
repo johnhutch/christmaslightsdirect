@@ -13,6 +13,10 @@ Rails.application.routes.draw do
 
   get 'content/contact'
 
+  authenticated :user do
+    root 'content#home', as: :authenticated_root
+  end
+
   root to: 'content#home'
   devise_for :users
   resources :users

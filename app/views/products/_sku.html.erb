@@ -1,0 +1,7 @@
+<div class="sku">
+  <div class="item_num"><%= sku.item_num %></div>
+  <div class="description"><%= sku.description %></div>
+  <div class="availability"><%= sku.availability.name %></div>
+  <div class="casepack"><%= sku.casepack %></div>
+  <div class="price"><%= user_signed_in? ? sku.price : "Sign Up to View" %></div>
+</div>

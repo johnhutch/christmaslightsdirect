@@ -12,6 +12,17 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :category_name, "Product Category" %>
+    <small>Either type a new category, or pick a pre-existing one from the drop down</small><br />
+    <%= form.text_field :category_name, list: "categories_autocomplete" %>
+    <datalist id="categories_autocomplete">
+      <% Category.all.each do |category| %>
+        <option value="<%= category.name %>">
+      <% end %>
+    </datalist>
+  </div>
+
+  <div class="field">
     <%= form.label :title, "Product Name" %>
     <%= form.text_field :title %>
   </div>
